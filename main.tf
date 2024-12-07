@@ -15,15 +15,15 @@ module "vpc" {
   single_nat_gateway   = true
 
   tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/demo-eks-cluster" = "shared"
   }
   public_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/demo-eks-cluster" = "shared"
     "kubernetes.io/role/elb"               = 1
 
   }
   private_subnet_tags = {
-    "kubernetes.io/cluster/my-eks-cluster" = "shared"
+    "kubernetes.io/cluster/demo-eks-cluster" = "shared"
     "kubernetes.io/role/private_elb"       = 1
 
   }
